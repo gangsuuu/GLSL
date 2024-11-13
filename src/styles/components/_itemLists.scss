@@ -1,0 +1,7 @@
+@use '../abstracts/variables';
+
+
+.contentLists__container{
+  @include variables.sideFrame();
+  z-index: 0;
+}

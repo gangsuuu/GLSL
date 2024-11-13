@@ -1,0 +1,91 @@
+/** header **/
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20vw;
+	height: 100vh;
+	background-color: #748CAB;
+  transition: 0.4s;
+  z-index: 100;
+
+  &.close{
+    right: -20vw;
+  }
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+}
+.header__profile__container {
+  width: 100%;
+  position: relative;
+  padding:  80px 0 25px 0;
+}
+.header__profile__box {
+  width: 100%-30%;
+  aspect-ratio: 1;
+  left: 15%;
+  position: relative;
+}
+.header__profile__photoWrap{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: aliceblue;
+}
+.header__profile__contents {
+  width: 100% - 20%;
+  padding: 0 10%;
+  font-size: 12px;
+
+  .header__profile__name{
+    padding-bottom: 10px;
+    :first-child {
+      font-size: 17px;
+      padding-bottom: 2px;
+    }
+
+    :nth-child(2) {
+      font-size: 13px;
+    }
+  } //name
+
+  .header__profile__info {
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    line-height: 14px;
+    padding-bottom: 20px;
+  } //info
+  
+  .header__profile__links {
+    ul {
+      padding-bottom: 10px;
+    }
+    li {
+      padding-bottom: 10px;
+      text-decoration: none;
+
+    }
+    a {
+      text-decoration: none;
+      &:visited {
+        text-decoration: none;
+      }
+      color: #000;
+    }
+    
+  }//links
+  
+}//contents
+
+.header__profile__emailWrap {
+  position: absolute;
+  bottom: 25px;
+  width: 100% - 20%;
+  padding: 0 10%;
+  .header__profile__email {
+    font-size: 13px;
+  }
+}

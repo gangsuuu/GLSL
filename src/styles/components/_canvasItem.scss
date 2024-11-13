@@ -1,0 +1,27 @@
+.canvas__itemWrap {
+  width: 12vw;
+}
+
+
+.canvas__item {
+  border: 1px solid #fff;
+  width: 100%;
+  aspect-ratio: 13/9;
+}
+
+.settings {
+  width: 200px;
+  height: 35px;
+
+  ul {
+    display: flex;
+    gap: 1vw;
+
+    li > div {
+      width: 35px;
+      aspect-ratio:1;
+      border-radius: 100%;
+      background-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@mixin sideFrame () {
+  position: fixed;
+	top: 0;
+	right: 0;
+	width: 20vw;
+	height: 100vh;
+	background-color: #748CAB;
+  transition: 0.4s;
+
+}

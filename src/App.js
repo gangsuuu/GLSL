@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Basic/Header";
+import Canvas from "./Components/Canvas/Canvas";
+import '../src/styles/abstracts/main.css'
+import ContentNav from "./Components/Canvas/ContentNav";
+import { useEffect, useState } from "react";
+import ItemLists from "./Components/Component/ItemLists";
 
 function App() {
+  let [header,setHeader] = useState(true)
+  function showHeader() {
+    setHeader(!header)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header
+        header ={header}
+      >
+      </Header>
+      <Canvas>
+      </Canvas>
+      <ContentNav
+        showHeader={() => showHeader()}
+      ></ContentNav>
+      <ItemLists></ItemLists>
+    </>
   );
 }
 

@@ -1,0 +1,19 @@
+@use '../abstracts/variables';
+
+.ContentNav__container {
+  width: 78vw;
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  bottom: 70px;
+  left: 1vw;
+  flex-direction: column;
+  gap: 1vw;
+
+}
+.ContentNav__Lists {
+  display: flex;
+  justify-content: space-between;
+  
+  gap: 1vw;
+}
